@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo GOPATH - $GOPATH
+  build:
+    commands:
+      - echo Build Started on `date``
+      - go get ./...
+      - go build hello.go
+  post_build:
+    commands:
+      - echo Build ended on `date``
