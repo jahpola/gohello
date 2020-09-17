@@ -8,7 +8,7 @@ phases:
     commands:
       - echo Build Started on `date`
       - go get ./...
-      - go build hello.go
+      - go build main.go
   post_build:
     commands:
       - echo Build ended on `date`
