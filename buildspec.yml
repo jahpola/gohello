@@ -6,9 +6,9 @@ phases:
       - echo GOPATH - $GOPATH
   build:
     commands:
-      - echo Build Started on `date``
+      - echo Build Started on `date`
       - go get ./...
       - go build hello.go
   post_build:
     commands:
-      - echo Build ended on `date``
+      - echo Build ended on `date`
